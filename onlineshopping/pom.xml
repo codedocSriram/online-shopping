@@ -7,21 +7,18 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>onlineshopping Maven Webapp</name>
   <url>http://maven.apache.org</url>
- 
-<properties>
-<javaee.version>8.0.1</javaee.version>
-</properties>
-
- <!-- JAVA EE API -->
+  <properties>
+  <javaee.version>8.0.1</javaee.version>
+  </properties>
   <dependencies>
-    <dependency>
+ <!-- JAVA EE API -->
+<dependency>
     <groupId>javax</groupId>
     <artifactId>javaee-api</artifactId>
     <version>${javaee.version}</version>
     <scope>provided</scope>
-    </dependency>
-    
-    <!-- J UNIT -->
+</dependency>
+<!-- JUNIT -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -30,16 +27,14 @@
     </dependency>
   </dependencies>
   <build>
-  
-   <!-- Fixing plugin issue -->
+  <!-- FIXING PLUGIN ISSUES -->
   <plugins>
   <plugin>
   <groupId>org.apache.maven.plugins</groupId>
   <artifactId>maven-war-plugin</artifactId>
   <version>3.3.1</version>
   </plugin>
-  </plugins> 
-  
+  </plugins>
     <finalName>onlineshopping</finalName>
   </build>
 </project>
